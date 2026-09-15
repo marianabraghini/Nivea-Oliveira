@@ -4,29 +4,38 @@
     box-sizing: border-box; 
 }
 
-@font-face {
-    font-family: "Clash-extralight";
-    src: url(fonts/ClashDisplay-Extralight.ttf);
-    font-weight: 200;
-}
-@font-face {
-    font-family: "Clash-medium";
-    src: url(fonts/ClashDisplay-Medium.ttf);
-    font-weight: 500;
-}
-@font-face {
-    font-family: "Clash-semibold";
-    src: url(fonts/ClashDisplay-Semibold\ -\ cópia.otf);
-    font-weight: 600;
-}
-@font-face {
-    font-family: "Alice";
-    src: url(fonts/Alice-Regular.ttf);
-    font-weight: 400;
-}
+/* FONTS */
+    @font-face {
+        font-family: "Clash-extralight";
+        src: url(fonts/ClashDisplay-Extralight.ttf);
+        font-weight: 200;
+    }
+    @font-face {
+        font-family: "Clash-medium";
+        src: url(fonts/ClashDisplay-Medium.ttf);
+        font-weight: 500;
+    }
+    @font-face {
+        font-family: "Clash-semibold";
+        src: url(fonts/ClashDisplay-Semibold\ -\ cópia.otf);
+        font-weight: 600;
+    }
+    @font-face {
+        font-family: "Alice";
+        src: url(fonts/Alice-Regular.ttf);
+        font-weight: 700;
+    }
+    @font-face {
+        font-family: "Chillax";
+        src: url(fonts/Chillax-Regular.ttf);
+        font-weight: 500;
+    }
 
 h1{
     font-family: "Alice";
+}
+p{
+    font-family: "Clash-extralight";
 }
 
 body{
@@ -38,29 +47,69 @@ body{
 header{
     display: flex;
     align-items: center;
-    padding: 8px 4vw;
+    padding: 0px 3vw 1px 3vw;
     justify-content: space-between;
 }
-.button{
+    .button {
+        display: flex;
+        gap: 24px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: "Clash-extralight";
+    }
+    .button button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: "Clash-extralight";
+    }
+
+main{
     display: flex;
-    gap: 24px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-family: "Clash-extralight";
-}
-.button button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-family: "Clash-extralight";
-}
-
-
-/*header div logo{.  - não lembro como chama a class do logo -
-    displau:flex;
+    flex-direction: column;
     align-items: center;
-    height: 50px
-    justify-content: final
 }
-*/
+        .imagem-principal img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transform: translateY(-1vh);
+
+        }
+
+    .titulo-principal{
+        padding: 0vh 0vw;
+    }
+        .titulo-principal p {
+            font-family: "Clash-extralight";
+            font-size: 20px;
+            text-align: left;
+            transform: translateY(-2.5vh);
+            position: absolute;
+            bottom: 21vh;
+            left: 1.5vw;
+            margin: 0;
+            /*margin-bottom: 0vh;
+            margin-left: 0.5vw;*/
+        }
+        .titulo-principal h1 {
+            font-family: "Alice";
+            font-size: 180px;
+            position: absolute;
+            bottom: 0vh;
+            right: 2vw;
+            margin: 0;
+            /*display: flex;
+            align-items: center;
+            margin-top: -9vh;
+            margin-bottom: 0vh;*/
+        }
+        .titulo-principal h6 {
+            font-size: 18px;
+            position: absolute;
+            bottom: 3vh;
+            right: 1vw;
+            margin: 0;
+        }
+
